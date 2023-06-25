@@ -4,13 +4,13 @@ import matplotlib.pyplot as plt
 
 # define function
 def f(x):
-    return a * np.exp(b * x)
+    return (a * x) / (b + x)
 
 
 # inputs
 
-x = [4,5,7,8,9,10]
-y = [5800,5700,4200,4100,3100,2500]
+x = [5.0,8,12,16,18]
+y = [36.2,52,60,69.2,70]
 
 
 # plot graph to guess the solution
@@ -32,7 +32,7 @@ def plot():
     plt.grid(color = 'blue',linestyle = '--',linewidth = 0.5)
     plt.title("Curve Fitting", fontdict=font2)
 
-    xList = np.linspace(0, .22)
+    xList = np.linspace(0, 18)
     yList = f(xList)
 
     plt.plot(xList, yList, color = 'green')
@@ -41,38 +41,41 @@ def plot():
 
 n = len(x)
 z = np.zeros(n)
-for i in range(n):
-    z[i] = np.log(y[i])
+t = np.zeros(n)
 
-x_sum = 0
+for i in range(n):
+    t[i] = 1 / x[i]
+    z[i] = 1 / y[i]
+
+t_sum = 0
 z_sum = 0
-xz_sum = 0
-xx_sum = 0
+tz_sum = 0
+tt_sum = 0
 # print(n)
 
 for i in range(n):
-    x_sum = x_sum + x[i]
+    t_sum = t_sum + t[i]
     z_sum = z_sum + z[i]
-    xz_sum = xz_sum + x[i] * z[i]
-    xx_sum = xx_sum + x[i] ** 2
+    tz_sum = tz_sum + t[i] * z[i]
+    tt_sum = tt_sum + t[i] ** 2
 
 print(x_sum)
-print(z_sum)
+print(y_sum)
 print(xz_sum)
 print(xx_sum)
 
-a1 = (n * xz_sum - (x_sum * z_sum)) / (n * xx_sum - x_sum ** 2)
-a0 = (z_sum / n) - a1 * (x_sum / n)
+a1 = (n * tz_sum - (t_sum * z_sum)) / (n * tt_sum - t_sum ** 2)
+a0 = (z_sum / n) - a1 * (t_sum / n)
 
-a = np.exp(a0)
-b = a1
+a = 1 / a0
+b = a1 * a
 
 plot()
 
 print("The exponential model of non linear regression fits the data best")
 print("The value of a is : ", "%.4f" % a)
 print("The value of b is : ", "%.4f" % b)
-print("f(x) = %.4f * e ^ (%.4f * x)" % (a, b))
+print("f(x) = %.4f * x ^ (%.4f)" % (a, b))
 
 xP = .16
 yP = f(xP)

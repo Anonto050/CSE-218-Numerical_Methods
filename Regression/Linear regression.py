@@ -4,13 +4,13 @@ import matplotlib.pyplot as plt
 
 # define function
 def f(x):
-    return a * np.exp(b * x)
+    return a + b*x
 
 
 # inputs
 
-x = [4,5,7,8,9,10]
-y = [5800,5700,4200,4100,3100,2500]
+x = [0, .01, .03, .05, .07, .09, .11, .13, .15, .17, .19, .21]
+y = [1, 1.03, 1.06, 1.38, 2.09, 3.54, 6.41, 12.6, 22.1, 39.05, 65.32, 99.78]
 
 
 # plot graph to guess the solution
@@ -42,7 +42,8 @@ def plot():
 n = len(x)
 z = np.zeros(n)
 for i in range(n):
-    z[i] = np.log(y[i])
+    #z[i] = np.log(y[i])
+    z[i] = y[i]
 
 x_sum = 0
 z_sum = 0
@@ -64,15 +65,14 @@ print(xx_sum)
 a1 = (n * xz_sum - (x_sum * z_sum)) / (n * xx_sum - x_sum ** 2)
 a0 = (z_sum / n) - a1 * (x_sum / n)
 
-a = np.exp(a0)
+a = a0
 b = a1
 
-plot()
+#plot()
 
-print("The exponential model of non linear regression fits the data best")
 print("The value of a is : ", "%.4f" % a)
 print("The value of b is : ", "%.4f" % b)
-print("f(x) = %.4f * e ^ (%.4f * x)" % (a, b))
+
 
 xP = .16
 yP = f(xP)
