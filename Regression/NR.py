@@ -30,5 +30,3 @@ def newtonRaphson(x):
 # Driver program to test above
 x0 = -20  # Initial values assumed
 newtonRaphson(x0)
-
-# This code is contributed by "Sharad_Bhardwaj"
