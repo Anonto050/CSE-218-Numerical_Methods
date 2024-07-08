@@ -21,31 +21,28 @@ Welcome to the repository for CSE 218: Numerical Methods. This README provides d
 ### Offline-2: Gaussian Elimination
 - **Topic**: Gaussian Elimination
 - **Resources**:
-  - [Problem Specification](/offline-2/problem-spec.pdf)
-  - [Solution 1](/offline-2/solution-1/) | `Gaussian Elimination`
-  - [Solution 2](/offline-2/solution-2/) | `Partial Pivoting`
+  - [Problem Specification](/Gaussian%20Elimination/Homework%202%20problem%20description.pdf)
+  - [Solution](/Gaussian%20Elimination/Gaussian%20Elimination.py) | `Gaussian Elimination`
 
 ### Online-2: Regression/Curve Fitting
 - **Topic**: Regression/Curve Fitting
 - **Resources**:
-  - [Problem Specification](/online-2/problem-spec.pdf)
-  - [Solution 1](/online-2/solution-1/) | `Linear Regression`
-  - [Solution 2](/online-2/solution-2/) | `Polynomial Curve Fitting`
+  - [Problem Specification](/Regression/CSE%20218%20Online%20Curve%20Fitting.pdf)
+  - [Solution 1](/Regression/Linear%20regression.py) | `Linear Regression`
+  - [Solution 2](/Regression/Polynomial%20Model.py) | `Polynomial Curve Fitting`
 
 ---
 
 ### Offline-3: Integration Methods
 - **Topic**: Integration Methods
 - **Resources**:
-  - [Problem Specification](/offline-3/problem-spec.pdf)
-  - [Solution 1](/offline-3/solution-1/) | `Trapezoidal Rule`
-  - [Solution 2](/offline-3/solution-2/) | `Simpson's Rule`
+  - [Problem Specification](/Integration/homewor%233_integration.pdf)
+  - [Solution 1](/Integration/integration.py) | `Trapezoidal Rule`
+  - [Solution 2](/Integration/integration.py) | `Simpson's Rule`
 
 ## Additional Information
 For further details, please refer to the individual problem specifications and solutions provided in each section. If you have any questions or need assistance, feel free to reach out.
 
 ---
-
-**Note**: Make sure to keep your repository up to date with the latest changes and solutions.
 
 Happy coding!
