@@ -1,33 +1,20 @@
 # CSE 218: Numerical Methods
 
-Welcome to the repository for CSE 218: Numerical Methods. This README provides instructions on how to run the project on VS Code and details about each offline and online assignment.
-
-## Getting Started with VS Code
-
-1. **Clone the Repository**: Clone this repository to your local machine using the following command:
-    ```sh
-    git clone <repository_url>
-    ```
-
-2. **Open Workspace Settings**: Open the `.vscode/settings.json` file in VS Code.
-
-3. **Configure Source Paths**: Modify the `java.project.sourcePaths` in the `settings.json` file to point to the parent directory of the main class for the desired problem. For example, for `offline-1/solution-1`, set it accordingly.
-
-4. **Run the Main Class**: Run the main class of the desired problem directly from VS Code.
+Welcome to the repository for CSE 218: Numerical Methods. This README provides details about each offline and online assignment.
 
 ## Assignment Details
 
 ### Offline-1: Bisection Method
 - **Topic**: Bisection Method
 - **Resources**:
-  - [Problem Specification](/offline-1/problem-spec.pdf)
-  - [Solution](/offline-1/solution-1/) | `Bisection Method Implementation`
+  - [Problem Specification](/Bisection/Homework_bisection.pdf)
+  - [Solution](/Bisection/1905050_bisection.py) | `Bisection Method Implementation`
 
 ### Online-1: Interpolation
 - **Topic**: Interpolation
 - **Resources**:
-  - [Problem Specification](/online-1/problem-spec.pdf)
-  - [Solution](/online-1/solution-1/) | `Interpolation Methods`
+  - [Problem Specification](/Interpolation/Online_Interpolation_SecA2.docx.pdf)
+  - [Solution](/Interpolation/Interpolation.py) | `Interpolation Methods`
 
 ---
 
