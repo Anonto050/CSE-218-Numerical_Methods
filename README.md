@@ -31,6 +31,16 @@ Welcome to the repository for CSE 218: Numerical Methods. This README provides d
   - [Solution 1](/Regression/Linear%20regression.py) | `Linear Regression`
   - [Solution 2](/Regression/Polynomial%20Model.py) | `Polynomial Curve Fitting`
 
+#### Additional Practice: Regression Methods
+- **Growth Model**:
+  - [Practice Code](/Regression/Growth%20Model.py)
+- **Lagrange Interpolation**:
+  - [Practice Code](/Regression/lagrange.py)
+- **Power Model**:
+  - [Practice Code](/Regression/power%20model.py)
+- **Exponential Model**:
+  - [Practice Code](/Regression/exponential.py)
+    
 ---
 
 ### Offline-3: Integration Methods
